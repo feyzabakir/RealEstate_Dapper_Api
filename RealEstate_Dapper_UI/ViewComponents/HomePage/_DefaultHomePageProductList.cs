@@ -13,7 +13,7 @@ namespace RealEstate_Dapper_UI.ViewComponents.HomePage
             _httpClientFactory = httpClientFactory;
         }
 
-        public async Task<IViewComponentResult> InvokeAsync()
+        public async Task <IViewComponentResult> InvokeAsync()
         {
             var client = _httpClientFactory.CreateClient();
             var responseMessage = await client.GetAsync("https://localhost:44303/api/Products/ProductListWithCategory");
