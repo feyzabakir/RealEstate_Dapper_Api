@@ -5,6 +5,12 @@
     int count = 0;
 }
 
+<style>
+    img{
+        border-radius:50%;
+    }
+</style>
+
 <div class="container-fluid pt-4 px-4">
     <div class="row g-4">
         <div class="col-12">
@@ -26,7 +32,7 @@
                                 count++;
                                 <tr>
                                     <th scope="row">@count</th>
-                                    <td><img src="@item.ImageUrl" />@item.CityName</td>
+                                    <td><img src="@item.ImageUrl" height="50" width="50"/> @item.CityName</td>
                                     <td><a href="/PopularLocation/DeletePopularLocation/@item.LocationID" class="btn btn-outline-danger">Sil</a></td>
                                     <td><a href="/PopularLocation/UpdatePopularLocation/@item.LocationID" class="btn btn-outline-success">Güncelle</a></td>
                                 </tr>
