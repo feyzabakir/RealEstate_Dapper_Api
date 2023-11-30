@@ -38,7 +38,7 @@
                 <i class="fa fa-rocket fa-3x text-primary"></i>
                 <div class="ms-3">
                     <p class="mb-2">Ortalama Kira</p>
-                    <h6 class="mb-0">@ViewBag.averageProductPriceByRent</h6>
+                    <h6 class="mb-0">@(ViewBag.averageProductPriceByRent.Substring(0, ViewBag.averageProductPriceByRent.IndexOf('.') + 3))</h6>
                 </div>
             </div>
         </div>
